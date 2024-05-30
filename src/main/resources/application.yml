@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: api-simulator
+  datasource:
+    url: jdbc:mysql://localhost:3306/api-simulator?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: LocalDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+server:
+  port: 8001
